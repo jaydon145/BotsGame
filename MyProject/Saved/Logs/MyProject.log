@@ -1,4 +1,4 @@
-﻿Log file open, 04/16/20 11:48:36
+﻿Log file open, 04/16/20 11:53:42
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -9,7 +9,7 @@ LogConsoleResponse: Display: Failed to find resolution value strings in scalabil
 LogInit: Display: Running engine for game: MyProject
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.062395
+LogStats: Stats thread started at 0.081735
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -7:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -125,7 +125,7 @@ LogInit: Build: ++UE4+Release-4.24-CL-11590370
 LogInit: Engine Version: 4.24.3-11590370+++UE4+Release-4.24
 LogInit: Compatible Engine Version: 4.24.0-10570792+++UE4+Release-4.24
 LogInit: Net CL: 10570792
-LogInit: OS: Windows 10 (Release 1909) (), CPU: Intel(R) Core(TM) i3-9100F CPU @ 3.60GHz, GPU: Radeon RX 580 Series
+LogInit: OS: Windows 10 (Release 1909) (), CPU: AMD Ryzen 3 1200 Quad-Core Processor           , GPU: Radeon RX 570 Series
 LogInit: Compiled (64-bit): Feb 24 2020 15:39:18
 LogInit: Compiled with Visual C++: 19.16.27032.01
 LogInit: Build Configuration: Development
@@ -163,603 +163,471 @@ LogInit: Presizing for max 25165824 objects, including 0 objects not considered 
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2020.04.16-17.48.37:096][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2020.04.16-17.48.37:096][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2020.04.16-17.48.37:096][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Engine.ini]
-[2020.04.16-17.48.37:096][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2020.04.16-17.48.37:096][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Engine.ini]
-[2020.04.16-17.48.37:097][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Engine.ini]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Engine.ini]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2020.04.16-17.48.37:097][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Engine.ini]
-[2020.04.16-17.48.37:097][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Engine.ini]
-[2020.04.16-17.48.37:100][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2020.04.16-17.48.37:100][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2020.04.16-17.48.37:101][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2020.04.16-17.48.37:101][  0]LogInit: Selected Device Profile: [Windows]
-[2020.04.16-17.48.37:101][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2020.04.16-17.48.37:104][  0]LogHAL: Display: Platform has ~ 16 GB [17106374656 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2020.04.16-17.48.37:104][  0]LogInit: Going up to parent DeviceProfile []
-[2020.04.16-17.48.37:104][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2020.04.16-17.48.37:104][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
-[2020.04.16-17.48.37:105][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Engine.ini]
-[2020.04.16-17.48.37:105][  0]LogInit: Computer: DESKTOP-879V5SV
-[2020.04.16-17.48.37:105][  0]LogInit: User: RyanLoar
-[2020.04.16-17.48.37:105][  0]LogInit: CPU Page size=4096, Cores=4
-[2020.04.16-17.48.37:105][  0]LogInit: High frequency timer resolution =10.000000 MHz
-[2020.04.16-17.48.37:105][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2020.04.16-17.48.37:105][  0]LogMemory: Platform Memory Stats for Windows
-[2020.04.16-17.48.37:105][  0]LogMemory: Process Physical Memory: 106.70 MB used, 106.71 MB peak
-[2020.04.16-17.48.37:105][  0]LogMemory: Process Virtual Memory: 99.95 MB used, 99.95 MB peak
-[2020.04.16-17.48.37:105][  0]LogMemory: Physical Memory: 7292.58 MB used,  9021.33 MB free, 16313.91 MB total
-[2020.04.16-17.48.37:105][  0]LogMemory: Virtual Memory: 5121.78 MB used,  134212608.00 MB free, 134217728.00 MB total
-[2020.04.16-17.48.37:107][  0]LogWindows: WindowsPlatformFeatures enabled
-[2020.04.16-17.48.37:119][  0]LogInit: Using OS detected language (en-US).
-[2020.04.16-17.48.37:119][  0]LogInit: Using OS detected locale (en-US).
-[2020.04.16-17.48.37:120][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2020.04.16-17.48.37:261][  0]LogInit: Setting process to per monitor DPI aware
-[2020.04.16-17.48.37:289][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2020.04.16-17.48.37:289][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2020.04.16-17.48.37:401][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2020.04.16-17.48.37:401][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
-[2020.04.16-17.48.37:401][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
-[2020.04.16-17.48.37:401][  0]LogD3D11RHI: D3D11 adapters:
-[2020.04.16-17.48.37:436][  0]LogD3D11RHI:    0. 'Radeon RX 580 Series' (Feature Level 11_0)
-[2020.04.16-17.48.37:436][  0]LogD3D11RHI:       4076/0/8156 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
-[2020.04.16-17.48.37:438][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2020.04.16-17.48.37:438][  0]LogD3D11RHI:       0/0/8156 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2020.04.16-17.48.37:438][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2020.04.16-17.48.37:444][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2020.04.16-17.48.37:445][  0]LogD3D11RHI:     GPU DeviceId: 0x67df (for the marketing name, search the web for "GPU Device Id")
-[2020.04.16-17.48.37:445][  0]LogWindows: EnumDisplayDevices:
-[2020.04.16-17.48.37:445][  0]LogWindows:    0. 'Radeon RX 580 Series' (P:1 D:1)
-[2020.04.16-17.48.37:445][  0]LogWindows:    1. 'Radeon RX 580 Series' (P:0 D:0)
-[2020.04.16-17.48.37:445][  0]LogWindows:    2. 'Radeon RX 580 Series' (P:0 D:0)
-[2020.04.16-17.48.37:446][  0]LogWindows:    3. 'Radeon RX 580 Series' (P:0 D:0)
-[2020.04.16-17.48.37:446][  0]LogWindows:    4. 'Radeon RX 580 Series' (P:0 D:0)
-[2020.04.16-17.48.37:446][  0]LogWindows:    5. 'Radeon RX 580 Series' (P:0 D:0)
-[2020.04.16-17.48.37:447][  0]LogWindows:    6. 'Radeon RX 580 Series' (P:0 D:0)
-[2020.04.16-17.48.37:447][  0]LogWindows:    7. 'Radeon RX 580 Series' (P:0 D:0)
-[2020.04.16-17.48.37:447][  0]LogWindows: DebugString: FoundDriverCount:8 
-[2020.04.16-17.48.37:447][  0]LogD3D11RHI:     Adapter Name: Radeon RX 580 Series
-[2020.04.16-17.48.37:447][  0]LogD3D11RHI:   Driver Version: Adrenalin 2020 20.2.1 (internal:26.20.15019.1003, unified:26.20.15019.1003)
-[2020.04.16-17.48.37:447][  0]LogD3D11RHI:      Driver Date: 1-30-2020
-[2020.04.16-17.48.37:447][  0]LogRHI: Texture pool is 2853 MB (70% of 4076 MB)
-[2020.04.16-17.48.37:506][  0]LogD3D11RHI: RHI does not have support for 64 bit atomics
-[2020.04.16-17.48.37:506][  0]LogD3D11RHI: Async texture creation enabled
-[2020.04.16-17.48.37:517][  0]LogD3D11RHI: GPU Timing Frequency: 25.000000 (Debug: 2 1)
-[2020.04.16-17.48.37:757][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
-[2020.04.16-17.48.37:782][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
-[2020.04.16-17.48.37:782][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
-[2020.04.16-17.48.37:782][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATC'
-[2020.04.16-17.48.37:782][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
-[2020.04.16-17.48.37:782][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1'
-[2020.04.16-17.48.37:782][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1a'
-[2020.04.16-17.48.37:782][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
-[2020.04.16-17.48.37:782][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTC'
-[2020.04.16-17.48.37:782][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
-[2020.04.16-17.48.37:782][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
-[2020.04.16-17.48.37:782][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATCClient'
-[2020.04.16-17.48.37:782][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
-[2020.04.16-17.48.37:782][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1Client'
-[2020.04.16-17.48.37:782][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1aClient'
-[2020.04.16-17.48.37:782][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
-[2020.04.16-17.48.37:782][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTCClient'
-[2020.04.16-17.48.37:782][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
-[2020.04.16-17.48.37:782][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
-[2020.04.16-17.48.37:798][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
-[2020.04.16-17.48.37:798][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
-[2020.04.16-17.48.37:804][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
-[2020.04.16-17.48.37:813][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
-[2020.04.16-17.48.37:822][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
-[2020.04.16-17.48.37:831][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
-[2020.04.16-17.48.37:839][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
-[2020.04.16-17.48.37:847][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
-[2020.04.16-17.48.37:867][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
-[2020.04.16-17.48.37:867][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
-[2020.04.16-17.48.37:879][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
-[2020.04.16-17.48.37:879][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
-[2020.04.16-17.48.37:885][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
-[2020.04.16-17.48.37:892][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
-[2020.04.16-17.48.37:898][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
-[2020.04.16-17.48.37:904][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
-[2020.04.16-17.48.37:904][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2020.04.16-17.48.37:906][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
-[2020.04.16-17.48.37:926][  0]LogShaderCompilers: Guid format shader working directory is -20 characters bigger than the processId version (../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Intermediate/Shaders/WorkingDirectory/15916/).
-[2020.04.16-17.48.37:926][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Ryan Loar/AppData/Local/Temp/UnrealShaderWorkingDir/6E7FFA0643596588D2106A973066061B/'.
-[2020.04.16-17.48.37:926][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2020.04.16-17.48.37:926][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2020.04.16-17.48.37:926][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2020.04.16-17.48.38:522][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2020.04.16-17.48.38:567][  0]LogDerivedDataCache: Loaded boot cache 0.05s 79MB C:/Users/Ryan Loar/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
-[2020.04.16-17.48.38:567][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Ryan Loar/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc
-[2020.04.16-17.48.38:567][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2020.04.16-17.48.38:567][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2020.04.16-17.48.38:567][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2020.04.16-17.48.38:568][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2020.04.16-17.48.38:576][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2020.04.16-17.48.38:576][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2020.04.16-17.48.38:576][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2020.04.16-17.48.38:577][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Ryan Loar/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2020.04.16-17.48.38:577][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2020.04.16-17.48.38:577][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2020.04.16-17.48.38:599][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2020.04.16-17.48.38:601][  0]LogSlate: Using FreeType 2.10.0
-[2020.04.16-17.48.38:601][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2020.04.16-17.48.38:641][  0]LogAssetRegistry: FAssetRegistry took 0.0022 seconds to start up
-[2020.04.16-17.48.38:891][  0]LogInit: Selected Device Profile: [Windows]
-[2020.04.16-17.48.39:022][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2020.04.16-17.48.39:022][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
-[2020.04.16-17.48.39:022][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2020.04.16-17.48.39:022][  0]LogMeshReduction: No distributed automatic mesh merging module available
-[2020.04.16-17.48.39:022][  0]LogMeshMerging: No distributed automatic mesh merging module available
-[2020.04.16-17.48.39:032][  0]LogNetVersion: MyProject 1.0.0, NetCL: 10570792, EngineNetVer: 13, GameNetVer: 0 (Checksum: 2318771507)
-[2020.04.16-17.48.39:885][  0]LogPackageLocalizationCache: Processed 10 localized package path(s) for 1 prioritized culture(s) in 0.037691 seconds
-[2020.04.16-17.48.39:892][  0]LogUObjectArray: 46750 objects as part of root set at end of initial load.
-[2020.04.16-17.48.39:892][  0]LogUObjectAllocator: 8137160 out of 0 bytes used by permanent object pool.
-[2020.04.16-17.48.39:892][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2020.04.16-17.48.40:231][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2020.04.16-17.48.40:233][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2020.04.16-17.48.40:276][  0]SourceControl: Source control is disabled
-[2020.04.16-17.48.40:276][  0]SourceControl: Source control is disabled
-[2020.04.16-17.48.40:277][  0]SourceControl: Source control is disabled
-[2020.04.16-17.48.40:277][  0]SourceControl: Source control is disabled
-[2020.04.16-17.48.40:278][  0]SourceControl: Source control is disabled
-[2020.04.16-17.48.40:285][  0]LogVSAccessor: Display: Unable to create Visual Studio setup instance: 80040154
-[2020.04.16-17.48.40:286][  0]LogVSAccessor: Display: Unable to create Visual Studio setup instance: 80040154
-[2020.04.16-17.48.40:349][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2020.04.16-17.48.40:358][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2020.04.16-17.48.40:358][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2020.04.16-17.48.40:430][  0]LogOcInput: OculusInput pre-init called
-[2020.04.16-17.48.40:436][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
-[2020.04.16-17.48.40:436][  0]LogWindows: File 'OVRPlugin.dll' does not exist
-[2020.04.16-17.48.40:496][  0]LogEngine: Initializing Engine...
-[2020.04.16-17.48.40:497][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2020.04.16-17.48.40:498][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
-[2020.04.16-17.48.40:780][  0]LogInit: Initializing FReadOnlyCVARCache
-[2020.04.16-17.48.40:786][  0]LogAIModule: Creating AISystem for world Untitled
-[2020.04.16-17.48.40:800][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2020.04.16-17.48.40:800][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2020.04.16-17.48.40:800][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2020.04.16-17.48.40:800][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2020.04.16-17.48.40:800][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2020.04.16-17.48.40:800][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2020.04.16-17.48.40:800][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2020.04.16-17.48.40:800][  0]LogAudio: Display: AudioDevice MaxSources: 32
-[2020.04.16-17.48.40:801][  0]LogAudio: Display: Using built-in audio occlusion.
-[2020.04.16-17.48.40:801][  0]LogAudioMixer: Display: Initializing audio mixer.
-[2020.04.16-17.48.40:811][  0]LogAudioMixer: Display: Audio Device Output Speaker Info:
-[2020.04.16-17.48.40:811][  0]LogAudioMixer: Display: Name: Speakers (High Definition Audio Device)
-[2020.04.16-17.48.40:811][  0]LogAudioMixer: Display: Is Default: Yes
-[2020.04.16-17.48.40:811][  0]LogAudioMixer: Display: Sample Rate: 48000
-[2020.04.16-17.48.40:811][  0]LogAudioMixer: Display: Channel Count Used: 2
-[2020.04.16-17.48.40:811][  0]LogAudioMixer: Display: Device Channel Count: 2
-[2020.04.16-17.48.40:811][  0]LogAudioMixer: Display: Channel Order:
-[2020.04.16-17.48.40:811][  0]LogAudioMixer: Display: 0: FrontLeft
-[2020.04.16-17.48.40:811][  0]LogAudioMixer: Display: 1: FrontRight
-[2020.04.16-17.48.40:833][  0]LogAudioMixer: Display: Using Audio Device Speakers (High Definition Audio Device)
-[2020.04.16-17.48.40:838][  0]LogInit: FAudioDevice initialized.
-[2020.04.16-17.48.40:838][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2020.04.16-17.48.40:913][  0]LogDerivedDataCache: Saved boot cache 0.07s 79MB C:/Users/Ryan Loar/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
-[2020.04.16-17.48.40:920][  0]LogInit: Texture streaming: Enabled
-[2020.04.16-17.48.40:928][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2020.04.16-17.48.40:928][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
-[2020.04.16-17.48.40:929][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
-[2020.04.16-17.48.40:961][  0]LogInit: Transaction tracking system initialized
-[2020.04.16-17.48.40:968][  0]BlueprintLog: New page: Editor Load
-[2020.04.16-17.48.40:992][  0]LocalizationService: Localization service is disabled
-[2020.04.16-17.48.41:028][  0]LogVSAccessor: Display: Unable to create Visual Studio setup instance: 80040154
-[2020.04.16-17.48.41:029][  0]LogVSAccessor: Display: Unable to create Visual Studio setup instance: 80040154
-[2020.04.16-17.48.41:211][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/' took 0.00s
-[2020.04.16-17.48.41:211][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2020.04.16-17.48.41:211][  0]LogCook: Display: Mobile HDR setting 1
-[2020.04.16-17.48.41:735][  0]SourceControl: Source control is disabled
-[2020.04.16-17.48.41:735][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2020.04.16-17.48.41:735][  0]LightingResults: New page: Lighting Build
-[2020.04.16-17.48.41:736][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
-[2020.04.16-17.48.41:736][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.16-17.48.41:736][  0]MapCheck: New page: Map Check
-[2020.04.16-17.48.41:736][  0]LightingResults: New page: Lighting Build
-[2020.04.16-17.48.41:758][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.38ms
-[2020.04.16-17.48.41:826][  0]LogStaticMesh: Building static mesh Floor_400x400...
-[2020.04.16-17.48.41:832][  0]LogStaticMesh: Built static mesh [0.01s] /Game/StarterContent/Architecture/Floor_400x400.Floor_400x400
-[2020.04.16-17.48.41:905][  0]LogAIModule: Creating AISystem for world Minimal_Default
-[2020.04.16-17.48.41:913][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2020.04.16-17.48.41:939][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.95ms
-[2020.04.16-17.48.41:939][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2020.04.16-17.48.41:939][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.138ms to complete.
-[2020.04.16-17.48.41:939][  0]LogFileHelpers: Loading map 'Minimal_Default' took 0.204
-[2020.04.16-17.48.42:169][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.16-17.48.42:176][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.16-17.48.42:182][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.16-17.48.42:187][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.16-17.48.42:207][  0]LogCollectionManager: Loaded 0 collections in 0.001416 seconds
-[2020.04.16-17.48.42:251][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Collections/' took 0.00s
-[2020.04.16-17.48.42:251][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/Developers/RyanLoar/Collections/' took 0.00s
-[2020.04.16-17.48.42:251][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/Collections/' took 0.00s
-[2020.04.16-17.48.42:251][  0]LogContentBrowser: Native class hierarchy populated in 0.0069 seconds. Added 3015 classes and 717 folders.
-[2020.04.16-17.48.42:265][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2020.04.16-17.48.42:324][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2020.04.16-17.48.42:340][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 2 classes and 3 folders.
-[2020.04.16-17.48.42:453][  0]LogSlate: Took 0.000187 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2020.04.16-17.48.42:455][  0]LogSlate: Took 0.000133 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2020.04.16-17.48.42:467][  0]LogSlate: Took 0.005579 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2020.04.16-17.48.42:575][  0]LogRenderer: Reallocating scene render targets to support 1208x572 Format 10 NumSamples 1 (Frame:1).
-[2020.04.16-17.48.42:943][  0]LogSlate: Window 'Tutorials' being destroyed
-[2020.04.16-17.48.42:954][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2020.04.16-17.48.42:954][  0]LogLoad: (Engine Initialization) Total time: 6.85 seconds
-[2020.04.16-17.48.42:955][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2020.04.16-17.48.42:996][  0]LogAssetRegistry: Asset discovery search completed in 4.3548 seconds
-[2020.04.16-17.48.42:999][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000006 seconds (updated 0 objects)
-[2020.04.16-17.48.43:001][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2020.04.16-17.48.43:021][  0]LogSlate: Took 0.005209 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2020.04.16-17.49.06:540][747]LogActorFactory: Actor Factory created Cube
-[2020.04.16-17.49.07:748][887]LogActorFactory: Actor Factory created Cube
-[2020.04.16-17.49.13:913][568]LogSlate: Took 0.000139 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2020.04.16-17.49.13:956][568]LogUObjectHash: Compacting FUObjectHashTables data took   1.24ms
-[2020.04.16-17.49.14:071][568]LogSavePackage: Moving '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_Default45F27CE44C5FFE6900CBF49FD89D067C.tmp' to '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default.umap'
-[2020.04.16-17.49.14:136][568]LogSavePackage: Moving '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_Default_BuiltData25470DCA4726460613D45FBBAB6F20F1.tmp' to '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
-[2020.04.16-17.49.14:148][568]AssetCheck: New page: Asset Save: multiple assets
-[2020.04.16-17.49.14:148][568]LogContentValidation: Display: Validating World /Game/StarterContent/Maps/Minimal_Default.Minimal_Default
-[2020.04.16-17.49.14:148][568]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/StarterContent/Maps/Minimal_Default_BuiltData.Minimal_Default_BuiltData
-[2020.04.16-17.49.18:400][ 64]LogUObjectHash: Compacting FUObjectHashTables data took   1.36ms
-[2020.04.16-17.49.18:486][ 64]LogSavePackage: Moving '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_DefaultA47782264AC3D9F21C37B0A5FB3464EB.tmp' to '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default.umap'
-[2020.04.16-17.49.18:536][ 64]LogSavePackage: Moving '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_Default_BuiltDataCA80C4CF4C181FD17EBB92BFDD8D62AC.tmp' to '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
-[2020.04.16-17.49.18:548][ 64]AssetCheck: New page: Asset Save: multiple assets
-[2020.04.16-17.49.18:548][ 64]LogContentValidation: Display: Validating World /Game/StarterContent/Maps/Minimal_Default.Minimal_Default
-[2020.04.16-17.49.18:548][ 64]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/StarterContent/Maps/Minimal_Default_BuiltData.Minimal_Default_BuiltData
-[2020.04.16-17.49.19:115][127]LogUObjectHash: Compacting FUObjectHashTables data took   1.36ms
-[2020.04.16-17.49.19:202][127]LogSavePackage: Moving '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_Default9F8C99A64D226E0E44B2CE967EC0FBA0.tmp' to '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default.umap'
-[2020.04.16-17.49.19:252][127]LogSavePackage: Moving '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_Default_BuiltData68C34A794E652C587084E3965E2DA1F9.tmp' to '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
-[2020.04.16-17.49.19:263][127]AssetCheck: New page: Asset Save: multiple assets
-[2020.04.16-17.49.19:263][127]LogContentValidation: Display: Validating World /Game/StarterContent/Maps/Minimal_Default.Minimal_Default
-[2020.04.16-17.49.19:263][127]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/StarterContent/Maps/Minimal_Default_BuiltData.Minimal_Default_BuiltData
-[2020.04.16-17.49.19:598][161]LogUObjectHash: Compacting FUObjectHashTables data took   1.38ms
-[2020.04.16-17.49.19:687][161]LogSavePackage: Moving '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_Default2CAA6D0149743311BD0079BBB9658BFA.tmp' to '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default.umap'
-[2020.04.16-17.49.19:737][161]LogSavePackage: Moving '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_Default_BuiltData70705B58403233940B4E0FA90E154614.tmp' to '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
-[2020.04.16-17.49.19:748][161]AssetCheck: New page: Asset Save: multiple assets
-[2020.04.16-17.49.19:748][161]LogContentValidation: Display: Validating World /Game/StarterContent/Maps/Minimal_Default.Minimal_Default
-[2020.04.16-17.49.19:748][161]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/StarterContent/Maps/Minimal_Default_BuiltData.Minimal_Default_BuiltData
-[2020.04.16-17.49.20:031][190]LogUObjectHash: Compacting FUObjectHashTables data took   1.37ms
-[2020.04.16-17.49.20:117][190]LogSavePackage: Moving '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_Default6970D6684FE163C2DE1F05A169F4A669.tmp' to '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default.umap'
-[2020.04.16-17.49.20:167][190]LogSavePackage: Moving '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_Default_BuiltData2511F34A4D2A5CFC781750943A85D247.tmp' to '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
-[2020.04.16-17.49.20:180][190]AssetCheck: New page: Asset Save: multiple assets
-[2020.04.16-17.49.20:180][190]LogContentValidation: Display: Validating World /Game/StarterContent/Maps/Minimal_Default.Minimal_Default
-[2020.04.16-17.49.20:180][190]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/StarterContent/Maps/Minimal_Default_BuiltData.Minimal_Default_BuiltData
-[2020.04.16-17.49.20:433][215]LogUObjectHash: Compacting FUObjectHashTables data took   1.40ms
-[2020.04.16-17.49.20:518][215]LogSavePackage: Moving '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_Default2FB3F3CA4E0836728A44729E0A3459AB.tmp' to '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default.umap'
-[2020.04.16-17.49.20:568][215]LogSavePackage: Moving '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_Default_BuiltDataBFA8E3F542DB3D6D2A4D919CBF93E33D.tmp' to '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
-[2020.04.16-17.49.20:579][215]AssetCheck: New page: Asset Save: multiple assets
-[2020.04.16-17.49.20:579][215]LogContentValidation: Display: Validating World /Game/StarterContent/Maps/Minimal_Default.Minimal_Default
-[2020.04.16-17.49.20:579][215]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/StarterContent/Maps/Minimal_Default_BuiltData.Minimal_Default_BuiltData
-[2020.04.16-17.49.20:818][238]LogUObjectHash: Compacting FUObjectHashTables data took   1.33ms
-[2020.04.16-17.49.20:905][238]LogSavePackage: Moving '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_Default1438097A4DCA56A54A13C69788FA709E.tmp' to '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default.umap'
-[2020.04.16-17.49.20:955][238]LogSavePackage: Moving '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_Default_BuiltDataF9147F2D405CC9B02255C8BC93D01DE0.tmp' to '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
-[2020.04.16-17.49.20:966][238]AssetCheck: New page: Asset Save: multiple assets
-[2020.04.16-17.49.20:966][238]LogContentValidation: Display: Validating World /Game/StarterContent/Maps/Minimal_Default.Minimal_Default
-[2020.04.16-17.49.20:966][238]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/StarterContent/Maps/Minimal_Default_BuiltData.Minimal_Default_BuiltData
-[2020.04.16-17.49.21:300][273]LogUObjectHash: Compacting FUObjectHashTables data took   1.39ms
-[2020.04.16-17.49.21:386][273]LogSavePackage: Moving '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_DefaultDAC71A0F4F77B17840AB848AB54B5946.tmp' to '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default.umap'
-[2020.04.16-17.49.21:436][273]LogSavePackage: Moving '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_Default_BuiltData3BB5AFE5450FCC2E56F16C90562DDDF0.tmp' to '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
-[2020.04.16-17.49.21:447][273]AssetCheck: New page: Asset Save: multiple assets
-[2020.04.16-17.49.21:447][273]LogContentValidation: Display: Validating World /Game/StarterContent/Maps/Minimal_Default.Minimal_Default
-[2020.04.16-17.49.21:447][273]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/StarterContent/Maps/Minimal_Default_BuiltData.Minimal_Default_BuiltData
-[2020.04.16-17.49.22:616][407]LogUObjectHash: Compacting FUObjectHashTables data took   1.37ms
-[2020.04.16-17.49.22:702][407]LogSavePackage: Moving '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_DefaultE146B5434A25A34A63FCC18C32D17061.tmp' to '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default.umap'
-[2020.04.16-17.49.22:751][407]LogSavePackage: Moving '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_Default_BuiltDataBC6BB85D4194ED8BE40EA7A13FDD4679.tmp' to '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
-[2020.04.16-17.49.22:762][407]AssetCheck: New page: Asset Save: multiple assets
-[2020.04.16-17.49.22:762][407]LogContentValidation: Display: Validating World /Game/StarterContent/Maps/Minimal_Default.Minimal_Default
-[2020.04.16-17.49.22:762][407]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/StarterContent/Maps/Minimal_Default_BuiltData.Minimal_Default_BuiltData
-[2020.04.16-17.49.24:179][568]MapCheck: New page: Map Check
-[2020.04.16-17.49.24:198][568]Cmd: MAP REBUILD ALLVISIBLE
-[2020.04.16-17.49.24:198][568]LogEditorServer: Rebuildmap Clear paths rebuilt
-[2020.04.16-17.49.24:204][568]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=false
-[2020.04.16-17.49.24:238][568]LogUObjectHash: Compacting FUObjectHashTables data took   1.36ms
-[2020.04.16-17.49.24:250][568]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
-[2020.04.16-17.49.24:271][568]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
-[2020.04.16-17.49.24:283][568]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 2
-[2020.04.16-17.49.24:283][568]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 1
-[2020.04.16-17.49.24:283][568]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
-[2020.04.16-17.49.24:919][568]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 4
-[2020.04.16-17.49.24:919][568]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 3
-[2020.04.16-17.49.24:919][568]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 2
-[2020.04.16-17.49.24:919][568]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 1
-[2020.04.16-17.49.24:919][568]TextureStreamingBuild: Display: Compiling optional shaders took 0.680 seconds.
-[2020.04.16-17.49.24:945][568]LogLevel: Display: Export Material TexCoord Scales took 0.026 seconds.
-[2020.04.16-17.49.24:948][568]TextureStreamingBuild: Display: Build Texture Streaming took 0.003 seconds.
-[2020.04.16-17.49.24:968][568]LogUObjectHash: Compacting FUObjectHashTables data took   0.52ms
-[2020.04.16-17.49.24:981][568]LightingResults: New page: Lighting Build - Apr 16, 2020, 5:49:24 AM
-[2020.04.16-17.49.25:024][568]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
-[2020.04.16-17.49.25:074][568]LogSwarmInterface: [OpenConnection] Connecting to agent ...
-[2020.04.16-17.49.25:093][568]LogSwarmInterface: [TryOpenConnection] Testing the Agent
-[2020.04.16-17.49.25:628][568]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
-[2020.04.16-17.49.25:628][568]LogSwarmInterface: [TryOpenConnection] Local Process ID is 15916
-[2020.04.16-17.49.32:120][568]LogStaticLightingSystem: Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
-[2020.04.16-17.49.32:121][568]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
-[2020.04.16-17.49.32:121][568]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
-[2020.04.16-17.49.32:121][568]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
-[2020.04.16-17.49.32:121][568]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
-[2020.04.16-17.49.32:121][568]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
-[2020.04.16-17.49.32:298][568]Cmd: MAP CHECK DONTDISPLAYDIALOG
-[2020.04.16-17.49.32:298][568]MapCheck: New page: Minimal_Default - Apr 16, 2020, 5:49:32 AM
-[2020.04.16-17.49.32:298][568]MapCheck: Error: WorldSettings_1 Maps need lighting rebuilt 
-[2020.04.16-17.49.32:302][568]MapCheck: Map check complete: 1 Error(s), 0 Warning(s), took 4.66ms to complete.
-[2020.04.16-17.49.32:304][568]LogEditorBuildUtils: Build time 0:08
-[2020.04.16-17.49.32:376][568]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer M_Metal_Copper, compiling. 
-[2020.04.16-17.49.32:392][568]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 2
-[2020.04.16-17.49.32:392][568]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 1
-[2020.04.16-17.49.32:392][568]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer M_Metal_Copper, compiling. 
-[2020.04.16-17.49.32:470][568]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 2
-[2020.04.16-17.49.32:494][569]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer MaterialInstanceDynamic_0, compiling. 
-[2020.04.16-17.49.32:507][569]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer MaterialInstanceDynamic_0, compiling. 
-[2020.04.16-17.49.32:589][570]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer BasicShapeMaterial, compiling. 
-[2020.04.16-17.49.32:602][570]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer BasicShapeMaterial, compiling. 
-[2020.04.16-17.49.32:687][571]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer WorldGridMaterial, compiling. Is special engine material.
-[2020.04.16-17.49.32:701][571]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer WorldGridMaterial, compiling. Is special engine material.
-[2020.04.16-17.49.33:865][573]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 13
-[2020.04.16-17.49.33:865][573]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 8
-[2020.04.16-17.49.33:865][573]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 5
-[2020.04.16-17.49.33:865][573]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 3
-[2020.04.16-17.49.33:865][573]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 1
-[2020.04.16-17.49.34:071][579]LogUObjectHash: Compacting FUObjectHashTables data took   0.61ms
-[2020.04.16-17.49.35:475][639]Job is a success!
-[2020.04.16-17.49.35:650][640]LogVolumetricLightmapImport: Imported Volumetric Lightmap in 0.033s
-[2020.04.16-17.49.35:651][640]LogVolumetricLightmapImport:      Indirection Texture 16x16x16 = 0.0Mb
-[2020.04.16-17.49.35:651][640]LogVolumetricLightmapImport:      BrickData (all levels) 0.0Mb
-[2020.04.16-17.49.35:651][640]LogVolumetricLightmapImport:      Bricks at depth
-[2020.04.16-17.49.35:651][640]LogVolumetricLightmapImport:          0: 16.7% covering 100.0% of volume
-[2020.04.16-17.49.35:651][640]LogVolumetricLightmapImport:          1: 16.7% covering 1.6% of volume
-[2020.04.16-17.49.35:651][640]LogVolumetricLightmapImport:          2: 66.7% covering 0.1% of volume
-[2020.04.16-17.49.35:651][640]LogVolumetricLightmapImport:      Bricks in each level
-[2020.04.16-17.49.35:652][640]LogVolumetricLightmapImport:          Minimal_Default 			 6 bricks 	 100.0% (Persistent Level)
-[2020.04.16-17.49.35:744][640]LogTexture: Display: Building textures: SkyOcclusion1_1 (AutoDXT, 256X128)
-[2020.04.16-17.49.35:744][640]LogTexture: Display: Building textures: HQ_Lightmap1_1 (AutoDXT, 256X256)
-[2020.04.16-17.49.35:744][640]LogTexture: Display: Building textures: LQ_Lightmap_1_1 (DXT1, 256X256)
-[2020.04.16-17.49.35:744][640]LogTexture: Display: Building textures: SkyOcclusion1_2 (AutoDXT, 64X32)
-[2020.04.16-17.49.35:744][640]LogTexture: Display: Building textures: HQ_Lightmap1_2 (AutoDXT, 64X64)
-[2020.04.16-17.49.35:744][640]LogTexture: Display: Building textures: LQ_Lightmap_1_2 (DXT1, 64X64)
-[2020.04.16-17.49.35:744][640]LogTexture: Display: Building textures: ShadowMapTexture2D_0 (G8, 256X128)
-[2020.04.16-17.49.35:744][640]LogTexture: Display: Building textures: ShadowMapTexture2D_1 (G8, 32X32)
-[2020.04.16-17.49.35:744][640]LogStaticLightingSystem: Minimal_Default_BuiltData storing lightmap data for 3 meshes in 2 LightmapResourceClusters (1.5 Meshes per cluster).
-[2020.04.16-17.49.35:763][640]Lightmass on DESKTOP-879V5SV: 823 ms total, 127 ms importing, 17 ms setup, 53 ms photons, 560 ms processing, 0 ms extra exporting [3/3 mappings]. Threads: 2.23 sec total, 230 ms processing.
-[2020.04.16-17.49.35:765][640]LogUObjectHash: Compacting FUObjectHashTables data took   1.29ms
-[2020.04.16-17.49.35:853][640]LogStaticLightingSystem: Illumination: 10.7 sec (41 ms encoding lightmaps, 19 ms encoding shadowmaps)
-[2020.04.16-17.49.35:853][640]LogStaticLightingSystem: Lightmap texture memory:  0.2 MB (0.2 MB streaming, 0.0 MB non-streaming), 4 textures
-[2020.04.16-17.49.35:854][640]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 2 textures
-[2020.04.16-17.49.36:127][640]DumpUnbuiltLightIteractions
-[2020.04.16-17.49.36:128][640]Lights with unbuilt interactions: 0
-[2020.04.16-17.49.36:128][640]
-[2020.04.16-17.49.36:128][640]Primitives with unbuilt interactions: 0
-[2020.04.16-17.49.36:247][641]Cmd: MAP CHECK NOTIFYRESULTS
-[2020.04.16-17.49.36:247][641]MapCheck: New page: Minimal_Default - Apr 16, 2020, 5:49:36 AM
-[2020.04.16-17.49.36:247][641]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.364ms to complete.
-[2020.04.16-17.49.38:974][967]LogSlate: Window 'Message Log' being destroyed
-[2020.04.16-17.49.38:980][967]LogSlate: Window 'Message Log' being destroyed
-[2020.04.16-17.49.40:633][147]LogUObjectHash: Compacting FUObjectHashTables data took   1.13ms
-[2020.04.16-17.49.40:721][147]LogSavePackage: Moving '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_Default57831CEE4ADA8A231B1F5992F8E2A587.tmp' to '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default.umap'
-[2020.04.16-17.49.40:751][147]LogSavePackage: Moving '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_Default_BuiltDataCD1714094C510D56DC177E9279E543AD.tmp' to '../../../../../../Users/Ryan Loar/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
-[2020.04.16-17.49.40:763][147]AssetCheck: New page: Asset Save: multiple assets
-[2020.04.16-17.49.40:763][147]LogContentValidation: Display: Validating World /Game/StarterContent/Maps/Minimal_Default.Minimal_Default
-[2020.04.16-17.49.40:763][147]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/StarterContent/Maps/Minimal_Default_BuiltData.Minimal_Default_BuiltData
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Engine.ini]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Engine.ini]
+[2020.04.16-17.53.42:753][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Engine.ini]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Engine.ini]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2020.04.16-17.53.42:753][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Engine.ini]
+[2020.04.16-17.53.42:754][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Engine.ini]
+[2020.04.16-17.53.42:757][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.04.16-17.53.42:757][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.04.16-17.53.42:758][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.04.16-17.53.42:759][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.04.16-17.53.42:759][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.04.16-17.53.42:759][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.04.16-17.53.42:759][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.04.16-17.53.42:759][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.04.16-17.53.42:759][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
+[2020.04.16-17.53.42:759][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.04.16-17.53.42:759][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.04.16-17.53.42:759][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
+[2020.04.16-17.53.42:759][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.04.16-17.53.42:759][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.04.16-17.53.42:759][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.04.16-17.53.42:759][  0]LogInit: Selected Device Profile: [Windows]
+[2020.04.16-17.53.42:759][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.04.16-17.53.42:762][  0]LogHAL: Display: Platform has ~ 8 GB [8536346624 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2020.04.16-17.53.42:762][  0]LogInit: Going up to parent DeviceProfile []
+[2020.04.16-17.53.42:762][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
+[2020.04.16-17.53.42:762][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.04.16-17.53.42:762][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.04.16-17.53.42:762][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
+[2020.04.16-17.53.42:762][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.04.16-17.53.42:762][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.04.16-17.53.42:763][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Scalability.ini]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2020.04.16-17.53.42:764][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Config/Windows/Engine.ini]
+[2020.04.16-17.53.42:765][  0]LogInit: Computer: DESKTOP-HGF2E2J
+[2020.04.16-17.53.42:765][  0]LogInit: User: jaydo
+[2020.04.16-17.53.42:765][  0]LogInit: CPU Page size=4096, Cores=4
+[2020.04.16-17.53.42:765][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.04.16-17.53.42:765][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
+[2020.04.16-17.53.42:765][  0]LogMemory: Platform Memory Stats for Windows
+[2020.04.16-17.53.42:765][  0]LogMemory: Process Physical Memory: 103.13 MB used, 103.13 MB peak
+[2020.04.16-17.53.42:765][  0]LogMemory: Process Virtual Memory: 99.61 MB used, 99.61 MB peak
+[2020.04.16-17.53.42:765][  0]LogMemory: Physical Memory: 4923.90 MB used,  3216.99 MB free, 8140.89 MB total
+[2020.04.16-17.53.42:765][  0]LogMemory: Virtual Memory: 5121.17 MB used,  134212608.00 MB free, 134217728.00 MB total
+[2020.04.16-17.53.42:768][  0]LogWindows: WindowsPlatformFeatures enabled
+[2020.04.16-17.53.42:784][  0]LogInit: Using OS detected language (en-US).
+[2020.04.16-17.53.42:784][  0]LogInit: Using OS detected locale (en-US).
+[2020.04.16-17.53.42:784][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2020.04.16-17.53.42:992][  0]LogInit: Setting process to per monitor DPI aware
+[2020.04.16-17.53.43:025][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.04.16-17.53.43:025][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.04.16-17.53.43:220][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.04.16-17.53.43:220][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2020.04.16-17.53.43:220][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2020.04.16-17.53.43:220][  0]LogD3D11RHI: D3D11 adapters:
+[2020.04.16-17.53.43:269][  0]LogD3D11RHI:    0. 'Radeon RX 570 Series' (Feature Level 11_0)
+[2020.04.16-17.53.43:269][  0]LogD3D11RHI:       4076/0/4070 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
+[2020.04.16-17.53.43:272][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.04.16-17.53.43:272][  0]LogD3D11RHI:       0/0/4070 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.04.16-17.53.43:272][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2020.04.16-17.53.43:281][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.04.16-17.53.43:281][  0]LogD3D11RHI:     GPU DeviceId: 0x67df (for the marketing name, search the web for "GPU Device Id")
+[2020.04.16-17.53.43:281][  0]LogWindows: EnumDisplayDevices:
+[2020.04.16-17.53.43:282][  0]LogWindows:    0. 'Radeon RX 570 Series' (P:1 D:1)
+[2020.04.16-17.53.43:282][  0]LogWindows:    1. 'Radeon RX 570 Series' (P:0 D:0)
+[2020.04.16-17.53.43:283][  0]LogWindows:    2. 'Radeon RX 570 Series' (P:0 D:0)
+[2020.04.16-17.53.43:283][  0]LogWindows:    3. 'Radeon RX 570 Series' (P:0 D:0)
+[2020.04.16-17.53.43:283][  0]LogWindows:    4. 'Radeon RX 570 Series' (P:0 D:0)
+[2020.04.16-17.53.43:284][  0]LogWindows:    5. 'Radeon RX 570 Series' (P:0 D:0)
+[2020.04.16-17.53.43:284][  0]LogWindows:    6. 'Radeon RX 570 Series' (P:0 D:0)
+[2020.04.16-17.53.43:284][  0]LogWindows:    7. 'Radeon RX 570 Series' (P:0 D:0)
+[2020.04.16-17.53.43:285][  0]LogWindows: DebugString: FoundDriverCount:8 
+[2020.04.16-17.53.43:285][  0]LogD3D11RHI:     Adapter Name: Radeon RX 570 Series
+[2020.04.16-17.53.43:285][  0]LogD3D11RHI:   Driver Version: Adrenalin 2020 19.12.3 (internal:26.20.15003.5016, unified:26.20.15003.5016)
+[2020.04.16-17.53.43:285][  0]LogD3D11RHI:      Driver Date: 12-16-2019
+[2020.04.16-17.53.43:285][  0]LogRHI: Texture pool is 2853 MB (70% of 4076 MB)
+[2020.04.16-17.53.43:357][  0]LogD3D11RHI: RHI does not have support for 64 bit atomics
+[2020.04.16-17.53.43:357][  0]LogD3D11RHI: Async texture creation enabled
+[2020.04.16-17.53.43:368][  0]LogD3D11RHI: GPU Timing Frequency: 25.000000 (Debug: 2 1)
+[2020.04.16-17.53.43:701][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2020.04.16-17.53.43:743][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2020.04.16-17.53.43:743][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2020.04.16-17.53.43:743][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATC'
+[2020.04.16-17.53.43:743][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2020.04.16-17.53.43:743][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1'
+[2020.04.16-17.53.43:743][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1a'
+[2020.04.16-17.53.43:743][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2020.04.16-17.53.43:743][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTC'
+[2020.04.16-17.53.43:743][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2020.04.16-17.53.43:743][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2020.04.16-17.53.43:743][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATCClient'
+[2020.04.16-17.53.43:743][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2020.04.16-17.53.43:743][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1Client'
+[2020.04.16-17.53.43:743][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1aClient'
+[2020.04.16-17.53.43:743][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2020.04.16-17.53.43:743][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTCClient'
+[2020.04.16-17.53.43:743][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2020.04.16-17.53.43:743][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2020.04.16-17.53.43:767][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2020.04.16-17.53.43:768][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2020.04.16-17.53.43:777][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2020.04.16-17.53.43:787][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2020.04.16-17.53.43:796][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2020.04.16-17.53.43:806][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2020.04.16-17.53.43:815][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2020.04.16-17.53.43:824][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2020.04.16-17.53.43:857][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2020.04.16-17.53.43:857][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2020.04.16-17.53.43:875][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2020.04.16-17.53.43:875][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2020.04.16-17.53.43:884][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2020.04.16-17.53.43:894][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2020.04.16-17.53.43:903][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2020.04.16-17.53.43:912][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2020.04.16-17.53.43:912][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.04.16-17.53.43:916][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2020.04.16-17.53.43:944][  0]LogShaderCompilers: Guid format shader working directory is -19 characters bigger than the processId version (../../../../../../Users/jaydo/Documents/GitHub/BotsGame/MyProject/Intermediate/Shaders/WorkingDirectory/5208/).
+[2020.04.16-17.53.43:944][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/jaydo/AppData/Local/Temp/UnrealShaderWorkingDir/FC0A0D8D486A99D5CFACE5AA6AA901D6/'.
+[2020.04.16-17.53.43:945][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.04.16-17.53.43:945][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.04.16-17.53.43:945][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.04.16-17.53.44:826][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.04.16-17.53.44:898][  0]LogDerivedDataCache: Loaded boot cache 0.07s 78MB C:/Users/jaydo/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
+[2020.04.16-17.53.44:898][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/jaydo/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc
+[2020.04.16-17.53.44:898][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/jaydo/Documents/GitHub/BotsGame/MyProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.04.16-17.53.44:898][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.04.16-17.53.44:898][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/jaydo/Documents/GitHub/BotsGame/MyProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.04.16-17.53.44:898][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.04.16-17.53.44:911][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.04.16-17.53.44:911][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.04.16-17.53.44:911][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2020.04.16-17.53.44:913][  0]LogDerivedDataCache: Using Local data cache path C:/Users/jaydo/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.04.16-17.53.44:913][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.04.16-17.53.44:913][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.04.16-17.53.44:945][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2020.04.16-17.53.44:948][  0]LogSlate: Using FreeType 2.10.0
+[2020.04.16-17.53.44:949][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.04.16-17.53.45:009][  0]LogAssetRegistry: FAssetRegistry took 0.0030 seconds to start up
+[2020.04.16-17.53.45:389][  0]LogInit: Selected Device Profile: [Windows]
+[2020.04.16-17.53.45:577][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.04.16-17.53.45:577][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2020.04.16-17.53.45:577][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2020.04.16-17.53.45:577][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2020.04.16-17.53.45:577][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2020.04.16-17.53.45:592][  0]LogNetVersion: MyProject 1.0.0, NetCL: 10570792, EngineNetVer: 13, GameNetVer: 0 (Checksum: 2318771507)
+[2020.04.16-17.53.46:868][  0]LogPackageLocalizationCache: Processed 10 localized package path(s) for 1 prioritized culture(s) in 0.056885 seconds
+[2020.04.16-17.53.46:879][  0]LogUObjectArray: 46750 objects as part of root set at end of initial load.
+[2020.04.16-17.53.46:879][  0]LogUObjectAllocator: 8137160 out of 0 bytes used by permanent object pool.
+[2020.04.16-17.53.46:879][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.04.16-17.53.47:407][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.04.16-17.53.47:411][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2020.04.16-17.53.47:475][  0]SourceControl: Source control is disabled
+[2020.04.16-17.53.47:475][  0]SourceControl: Source control is disabled
+[2020.04.16-17.53.47:477][  0]SourceControl: Source control is disabled
+[2020.04.16-17.53.47:478][  0]SourceControl: Source control is disabled
+[2020.04.16-17.53.47:479][  0]SourceControl: Source control is disabled
+[2020.04.16-17.53.47:578][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.04.16-17.53.47:591][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.04.16-17.53.47:591][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.04.16-17.53.47:701][  0]LogOcInput: OculusInput pre-init called
+[2020.04.16-17.53.47:711][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2020.04.16-17.53.47:711][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2020.04.16-17.53.47:800][  0]LogEngine: Initializing Engine...
+[2020.04.16-17.53.47:802][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.04.16-17.53.47:803][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2020.04.16-17.53.48:244][  0]LogInit: Initializing FReadOnlyCVARCache
+[2020.04.16-17.53.48:251][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.04.16-17.53.48:271][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.04.16-17.53.48:271][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.04.16-17.53.48:271][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.04.16-17.53.48:271][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.04.16-17.53.48:272][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.04.16-17.53.48:272][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.04.16-17.53.48:272][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.04.16-17.53.48:272][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.04.16-17.53.48:272][  0]LogAudio: Display: Using built-in audio occlusion.
+[2020.04.16-17.53.48:272][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2020.04.16-17.53.48:311][  0]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.04.16-17.53.48:311][  0]LogAudioMixer: Display: Name: Speakers (2- Realtek(R) Audio)
+[2020.04.16-17.53.48:311][  0]LogAudioMixer: Display: Is Default: Yes
+[2020.04.16-17.53.48:311][  0]LogAudioMixer: Display: Sample Rate: 48000
+[2020.04.16-17.53.48:311][  0]LogAudioMixer: Display: Channel Count Used: 2
+[2020.04.16-17.53.48:311][  0]LogAudioMixer: Display: Device Channel Count: 2
+[2020.04.16-17.53.48:311][  0]LogAudioMixer: Display: Channel Order:
+[2020.04.16-17.53.48:311][  0]LogAudioMixer: Display: 0: FrontLeft
+[2020.04.16-17.53.48:311][  0]LogAudioMixer: Display: 1: FrontRight
+[2020.04.16-17.53.48:372][  0]LogAudioMixer: Display: Using Audio Device Speakers (2- Realtek(R) Audio)
+[2020.04.16-17.53.48:377][  0]LogInit: FAudioDevice initialized.
+[2020.04.16-17.53.48:378][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2020.04.16-17.53.48:494][  0]LogDerivedDataCache: Saved boot cache 0.12s 78MB C:/Users/jaydo/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
+[2020.04.16-17.53.48:500][  0]LogInit: Texture streaming: Enabled
+[2020.04.16-17.53.48:511][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.04.16-17.53.48:511][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2020.04.16-17.53.48:513][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2020.04.16-17.53.48:568][  0]LogInit: Transaction tracking system initialized
+[2020.04.16-17.53.48:580][  0]BlueprintLog: New page: Editor Load
+[2020.04.16-17.53.48:620][  0]LocalizationService: Localization service is disabled
+[2020.04.16-17.53.48:967][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Content/' took 0.00s
+[2020.04.16-17.53.48:968][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.04.16-17.53.48:968][  0]LogCook: Display: Mobile HDR setting 1
+[2020.04.16-17.53.49:739][  0]SourceControl: Source control is disabled
+[2020.04.16-17.53.49:739][  0]Cmd: MAP LOAD FILE="../../../../../../Users/jaydo/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.04.16-17.53.49:740][  0]LightingResults: New page: Lighting Build
+[2020.04.16-17.53.49:741][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.04.16-17.53.49:741][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.16-17.53.49:741][  0]MapCheck: New page: Map Check
+[2020.04.16-17.53.49:741][  0]LightingResults: New page: Lighting Build
+[2020.04.16-17.53.49:774][  0]LogUObjectHash: Compacting FUObjectHashTables data took   2.12ms
+[2020.04.16-17.53.49:877][  0]LogTexture: Display: Building textures: HQ_Lightmap1_1 (AutoDXT, 256X256)
+[2020.04.16-17.53.49:877][  0]LogTexture: Display: Building textures: HQ_Lightmap1_2 (AutoDXT, 64X64)
+[2020.04.16-17.53.49:877][  0]LogTexture: Display: Building textures: LQ_Lightmap_1_1 (DXT1, 256X256)
+[2020.04.16-17.53.49:877][  0]LogTexture: Display: Building textures: LQ_Lightmap_1_2 (DXT1, 64X64)
+[2020.04.16-17.53.49:877][  0]LogTexture: Display: Building textures: SkyOcclusion1_1 (AutoDXT, 256X128)
+[2020.04.16-17.53.49:877][  0]LogStaticMesh: Building static mesh Floor_400x400...
+[2020.04.16-17.53.49:881][  0]LogTexture: Display: Building textures: SkyOcclusion1_2 (AutoDXT, 64X32)
+[2020.04.16-17.53.49:881][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_0 (G8, 256X128)
+[2020.04.16-17.53.49:881][  0]LogStaticMesh: Built static mesh [0.00s] /Game/StarterContent/Architecture/Floor_400x400.Floor_400x400
+[2020.04.16-17.53.49:903][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_1 (G8, 32X32)
+[2020.04.16-17.53.49:960][  0]LogAIModule: Creating AISystem for world Minimal_Default
+[2020.04.16-17.53.49:968][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.04.16-17.53.50:029][  0]LogUObjectHash: Compacting FUObjectHashTables data took   2.75ms
+[2020.04.16-17.53.50:030][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.04.16-17.53.50:031][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.294ms to complete.
+[2020.04.16-17.53.50:031][  0]LogFileHelpers: Loading map 'Minimal_Default' took 0.291
+[2020.04.16-17.53.50:188][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.16-17.53.50:195][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.16-17.53.50:203][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.16-17.53.50:211][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.16-17.53.50:217][  0]LogCollectionManager: Loaded 0 collections in 0.002568 seconds
+[2020.04.16-17.53.50:235][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Collections/' took 0.00s
+[2020.04.16-17.53.50:235][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Content/Developers/jaydo/Collections/' took 0.00s
+[2020.04.16-17.53.50:235][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jaydo/Documents/GitHub/BotsGame/MyProject/Content/Collections/' took 0.00s
+[2020.04.16-17.53.50:235][  0]LogContentBrowser: Native class hierarchy populated in 0.0117 seconds. Added 3015 classes and 717 folders.
+[2020.04.16-17.53.50:239][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2020.04.16-17.53.50:315][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2020.04.16-17.53.50:320][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 2 classes and 3 folders.
+[2020.04.16-17.53.50:356][  0]LogSlate: Took 0.000210 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.04.16-17.53.50:359][  0]LogSlate: Took 0.000257 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.04.16-17.53.50:365][  0]LogSlate: Took 0.000209 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.04.16-17.53.50:451][  0]LogRenderer: Reallocating scene render targets to support 1208x572 Format 10 NumSamples 1 (Frame:1).
+[2020.04.16-17.53.50:648][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.04.16-17.53.50:649][  0]LogLoad: (Engine Initialization) Total time: 9.53 seconds
+[2020.04.16-17.53.50:649][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.04.16-17.53.50:702][  0]LogAssetRegistry: Asset discovery search completed in 5.6945 seconds
+[2020.04.16-17.53.50:706][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000009 seconds (updated 0 objects)
+[2020.04.16-17.53.50:708][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2020.04.16-17.53.50:728][  0]LogSlate: Took 0.000254 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.04.16-17.57.19:062][963]LogSlate: Took 0.000220 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.04.16-17.57.19:128][963]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2020.04.16-17.57.19:292][963]LogSavePackage: Moving '../../../../../../Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_Default363F6F45415A2F7767667E84D82F4F1E.tmp' to '../../../../../../Users/jaydo/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default.umap'
+[2020.04.16-17.57.19:352][963]LogSavePackage: Moving '../../../../../../Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_Default_BuiltData804615554B88FF4A48CB4794DD3D688E.tmp' to '../../../../../../Users/jaydo/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
+[2020.04.16-17.57.19:371][963]AssetCheck: New page: Asset Save: multiple assets
+[2020.04.16-17.57.19:371][963]LogContentValidation: Display: Validating World /Game/StarterContent/Maps/Minimal_Default.Minimal_Default
+[2020.04.16-17.57.19:371][963]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/StarterContent/Maps/Minimal_Default_BuiltData.Minimal_Default_BuiltData
+[2020.04.16-17.57.25:211][175]LogUObjectHash: Compacting FUObjectHashTables data took   2.72ms
+[2020.04.16-17.57.25:364][175]LogSavePackage: Moving '../../../../../../Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_Default2CF9119A471891B221EA0DBC47BADE99.tmp' to '../../../../../../Users/jaydo/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default.umap'
+[2020.04.16-17.57.25:417][175]LogSavePackage: Moving '../../../../../../Users/jaydo/Documents/GitHub/BotsGame/MyProject/Saved/Minimal_Default_BuiltData43AC4D6540ADB59593FF6F9D575E45B6.tmp' to '../../../../../../Users/jaydo/Documents/GitHub/BotsGame/MyProject/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset'
+[2020.04.16-17.57.25:433][175]AssetCheck: New page: Asset Save: multiple assets
+[2020.04.16-17.57.25:433][175]LogContentValidation: Display: Validating World /Game/StarterContent/Maps/Minimal_Default.Minimal_Default
+[2020.04.16-17.57.25:434][175]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/StarterContent/Maps/Minimal_Default_BuiltData.Minimal_Default_BuiltData
